@@ -1,0 +1,11 @@
+$light-sky: #d8f7ff;
+$navbar-default-color: $light-sky;
+$navbar-default-bg: #293370;
+$navbar-default-link-color: gray;
+$navbar-default-link-active-color: $light-sky;
+$navbar-default-link-hover-color: white;
+$navbar-default-link-hover-bg: black;
+
+@import "bootstrap";
+
+body { padding-top: 60px; }
