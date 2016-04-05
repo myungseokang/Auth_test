@@ -51,8 +51,8 @@ gem 'rolify'     # role 관리
 gem 'authority'  # 권한설정
 
 # 페이지 뷰를 깔끔하게 보이도록 하기 위해서 아래의 두 젬을 추가로 설치한다.
-gem 'bootstrap-sass'
-gem 'simple_form'
+gem 'bootstrap-sass', '~> 3.3.3'
+gem 'simple_form', '3.1.0'
 
 # 개발 모드에서 이메일을 보내않고 브라우저에서 미리보기한는 젬
 gem 'letter_opener', group: :development
