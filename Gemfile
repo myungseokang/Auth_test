@@ -56,3 +56,10 @@ gem 'simple_form', '3.1.0'
 
 # 개발 모드에서 이메일을 보내않고 브라우저에서 미리보기한는 젬
 gem 'letter_opener', group: :development
+
+# Post Type: 갤러리형을 사용하기 위해 사용하는 이미지 관리 젬
+gem 'carrierwave'
+gem 'mini_magick'
+
+# Font 사용
+gem 'font-awesome-rails'
