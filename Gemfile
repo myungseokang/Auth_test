@@ -54,7 +54,7 @@ gem 'authority'  # 권한설정
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'simple_form', '3.1.0'
 
-# 개발 모드에서 이메일을 보내않고 브라우저에서 미리보기한는 젬
+# 개발 모드에서 이메일을 보내않고 브라우저에서 미리보기하는 젬
 gem 'letter_opener', group: :development
 
 # Post Type: 갤러리형을 사용하기 위해 사용하는 이미지 관리 젬
