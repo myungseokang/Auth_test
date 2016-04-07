@@ -1,20 +1,22 @@
 <h2><%= bulletin_name params[:bulletin_id] %></h2>
 
-<table class='table'>
-  <tr>
-    <th>Title</th>
-    <td><%= @post.title %></td>
-  </tr>
-  <tr>
-    <th>Content</th>
-    <td><%= @post.content %></td>
-  </tr>
-  <tr>
-    <th>Created at</th>
-    <td><%= @post.created_at %></td>
-  </tr>
-</table>
+<div class='post'>
+  <div class="title">
+    <h3>Title:
+      <%= @post.title %></h3>
+  </div>
 
+  <div class="content">
+    <%= simple_format @post.content %>
+  </div>
+
+  <div class="user">
+    <strong>Created by </strong>
+    <%= @post.user.present? ? @post.user.email : "an anonymous user" %>,
+    <%= time_ago_in_words(@post.created_at) %> ago
+  </div>
+</div>
+<hr>
 
 <%= link_to 'Edit', edit_bulletin_post_path(@post.bulletin, @post), class: 'btn btn-default' %>
 <%= link_to 'Back', bulletin_posts_path, class: 'btn btn-default' %>

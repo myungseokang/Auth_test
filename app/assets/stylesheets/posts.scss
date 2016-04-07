@@ -3,14 +3,19 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .post {
-  border: 1px solid $gray-light;
-  border-radius: 5px;
+  border:1px solid #eaeaea;
   padding:1em;
-  margin-bottom: 1em;
   .title {
-    font-weight: bold;
-    font-size: 1.5em;
-    margin-bottom:.5em;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom:1em;
+  }
+  .content {
+
+  }
+  .user {
+    border-top: 1px solid #eaeaea;
+    margin-top: 1em;
+    text-align: right;
   }
 }
 

@@ -1,4 +1,6 @@
 class Post < ActiveRecord::Base
   belongs_to :bulletin
-  mount_uploader :picture, PictureUploader
+  belongs_to :user
+  resourcify
+  include Authority::Abilities
 end

@@ -2,10 +2,3 @@
 <p>Try Ruby on Rails</p>
 
 <br>
-<% if user_signed_in? %>
-    <p>현재 로그인된 유저의 이메일 : <%= current_user.email %></p>
-    <%= link_to '글 작성', bulletin_posts_path(1), class:'btn btn-default' %>
-    <p><%= link_to '로그아웃', destroy_user_session_path, method: :delete, data: { confirm: "Are you sure?" }, class:'btn btn-default' %></p>
-<% else %>
-    <p><%= link_to '로그인', new_user_session_path, class:'btn btn-default' %></p>
-<% end %>
