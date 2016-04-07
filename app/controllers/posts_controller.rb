@@ -58,7 +58,7 @@ class PostsController < ApplicationController
   def destroy
     @post.destroy
     respond_to do |format|
-      format.html { redirect_to bulletin_posts_url, notice: 'Post was successfully destroyed.' }
+      format.html { redirect_to bulletin_posts_url, notice: 'Post was successfully destroyed.' }#  notice: '~~' 이 부분이 flash 메세지
       format.json { head :no_content }
     end
   end

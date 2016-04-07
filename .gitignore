@@ -21,3 +21,6 @@
 
 # Subrime Plugin
 sftp-config.json
+
+# Image 관리
+public/uploads/*

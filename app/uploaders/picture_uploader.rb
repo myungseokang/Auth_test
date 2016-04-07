@@ -1,8 +1,8 @@
 # encoding: utf-8
 
 class PictureUploader < CarrierWave::Uploader::Base
-  after :remove, :delete_empty_upstream_dirs
   include CarrierWave::MiniMagick
+  after :remove, :delete_empty_upstream_dirs
 
   storage :file
 
