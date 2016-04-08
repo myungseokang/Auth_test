@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h2><%= bulletin_name params[:bulletin_id] %></h2>
 
 <div class='post'>
@@ -28,3 +29,27 @@
 <hr>
 <%= link_to 'Edit', edit_bulletin_post_path(@post.bulletin, @post), class: 'btn btn-default' %>
 <%= link_to 'Back', bulletin_posts_path, class: 'btn btn-default' %>
+=======
+<h2><%= bulletin_name params[:bulletin_id] %></h2>
+
+<div class='post'>
+  <div class="title">
+    <h3>Title:
+      <%= @post.title %></h3>
+  </div>
+
+  <div class="content">
+    <%= simple_format @post.content %>
+  </div>
+
+  <div class="user">
+    <strong>Created by </strong>
+    <%= @post.user.present? ? @post.user.email : "an anonymous user" %>,
+    <%= time_ago_in_words(@post.created_at) %> ago
+  </div>
+</div>
+<hr>
+
+<%= link_to 'Edit', edit_bulletin_post_path(@post.bulletin, @post), class: 'btn btn-default' %>
+<%= link_to 'Back', bulletin_posts_path, class: 'btn btn-default' %>
+>>>>>>> 5503e78d7ccd49e8b4928ef8ec3b43e0a312f26a
