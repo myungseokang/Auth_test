@@ -47,6 +47,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # 회원인증 및 권한설정을 위한 젬
 gem 'devise'     # 회원가입 및 인증
+gem 'rolify'     # 권한
 gem 'authority'  # 권한설정
 
 # 페이지 뷰를 깔끔하게 보이도록 하기 위해서 아래의 두 젬을 추가로 설치한다.

@@ -53,11 +53,7 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= current_user.email %> <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li><%= link_to "My Profile", edit_user_registration_path %></li>
-                    <% if current_user.is_admin == true %>
-                      <li><%= link_to "Roles : admin", '#'%></li>
-                    <% else %>
-                      <li><%= link_to "Roles : user", '#'%></li>
-                    <% end %>
+                    <li><%= link_to "Roles : " + user_roles(current_user), '#' %></li>
                     <li><%= link_to "Sign out", destroy_user_session_path, method: :delete, data: { confirm: "Are you sure?" } %></li>
                   </ul>
                 </li>
