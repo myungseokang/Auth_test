@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3', group: :development
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -47,19 +47,21 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # 회원인증 및 권한설정을 위한 젬
 gem 'devise'     # 회원가입 및 인증
-gem 'rolify'     # role 관리
 gem 'authority'  # 권한설정
 
 # 페이지 뷰를 깔끔하게 보이도록 하기 위해서 아래의 두 젬을 추가로 설치한다.
-gem 'bootstrap-sass', '~> 3.3.3'
+gem 'bootstrap-sass', '~> 3.2.0'
 gem 'simple_form', '3.1.0'
 
-# 개발 모드에서 이메일을 보내않고 브라우저에서 미리보기한는 젬
+# 개발 모드에서 이메일을 보내않고 브라우저에서 미리보기하는 젬
 gem 'letter_opener', group: :development
-
-# Post Type: 갤러리형을 사용하기 위해 사용하는 이미지 관리 젬
-gem 'carrierwave'
-gem 'mini_magick'
 
 # Font 사용
 gem 'font-awesome-rails'
+
+# Facebook 연동을 위한 젬
+gem 'omniauth-facebook'
+
+# Heroku에 배포하기 위한 젬
+gem 'pg', group: :production
+gem 'rails_12factor', group: :production
