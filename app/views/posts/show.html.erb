@@ -15,8 +15,16 @@
     <%= @post.user.present? ? @post.user.email : "an anonymous user" %>,
     <%= time_ago_in_words(@post.created_at) %> ago
   </div>
+
+  <!-- Like Button -->
+  <div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+  </div>
+
 </div>
 <hr>
-
 <%= link_to 'Edit', edit_bulletin_post_path(@post.bulletin, @post), class: 'btn btn-default' %>
 <%= link_to 'Back', bulletin_posts_path, class: 'btn btn-default' %>

@@ -47,7 +47,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # 회원인증 및 권한설정을 위한 젬
 gem 'devise'     # 회원가입 및 인증
-gem 'rolify'     # role 관리
 gem 'authority'  # 권한설정
 
 # 페이지 뷰를 깔끔하게 보이도록 하기 위해서 아래의 두 젬을 추가로 설치한다.
@@ -59,6 +58,9 @@ gem 'letter_opener', group: :development
 
 # Font 사용
 gem 'font-awesome-rails'
+
+# Facebook 연동을 위한 젬
+gem 'omniauth-facebook'
 
 # Heroku에 배포하기 위한 젬
 gem 'pg', group: :production
