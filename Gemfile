@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', group: :development
+gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -59,9 +59,3 @@ gem 'letter_opener', group: :development
 # Font 사용
 gem 'font-awesome-rails'
 
-# Facebook 연동을 위한 젬
-gem 'omniauth-facebook'
-
-# Heroku에 배포하기 위한 젬
-gem 'pg', group: :production
-gem 'rails_12factor', group: :production
