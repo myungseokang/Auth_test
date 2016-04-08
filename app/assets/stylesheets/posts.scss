@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
@@ -41,3 +42,48 @@ input[type='file'] {
     }
   }
 }
+=======
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.post {
+  border:1px solid #eaeaea;
+  padding:1em;
+  .title {
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom:1em;
+  }
+  .content {
+
+  }
+  .user {
+    border-top: 1px solid #eaeaea;
+    margin-top: 1em;
+    text-align: right;
+  }
+}
+
+input[type='file'] {
+  border: 1px solid #d1d1d1;
+  padding: .5em;
+  border-radius: .3em;
+  width: 100%;
+}
+
+.gallery {
+  overflow:auto;
+  .picture {
+    position:relative;
+    margin:1.5em 0;
+    .image img {
+      border: 1px solid #928c75;
+    }
+    .title {}
+    .content {}
+    .actions {
+      position:absolute;
+    }
+  }
+}
+>>>>>>> 5503e78d7ccd49e8b4928ef8ec3b43e0a312f26a

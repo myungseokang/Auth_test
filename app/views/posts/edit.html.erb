@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h2><%= bulletin_name params[:bulletin_id] %></h2>
 <div class="row">
   <div class='col-md-12'>
@@ -10,4 +11,18 @@
 
 <hr>
 <%= link_to 'Show', [@post.bulletin, @post], class: 'btn btn-default' %>
+=======
+<h2><%= bulletin_name params[:bulletin_id] %></h2>
+<div class="row">
+  <div class='col-md-12'>
+    <p style='text-align:right;'>
+      created by <%= current_user.email %>, <%= time_ago_in_words(@post.created_at) %> ago
+    </p>
+  </div>
+</div>
+<%= render 'form' %>
+
+<hr>
+<%= link_to 'Show', [@post.bulletin, @post], class: 'btn btn-default' %>
+>>>>>>> 5503e78d7ccd49e8b4928ef8ec3b43e0a312f26a
 <%= link_to 'Back', bulletin_posts_path, class: 'btn btn-default' %>
