@@ -21,9 +21,3 @@
 
 # Subrime Plugin
 sftp-config.json
-
-# Image 관리
-public/uploads/*
-
-# FB app_id, Secert_id
-config/application.rb
